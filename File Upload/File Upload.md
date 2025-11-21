@@ -1,6 +1,7 @@
 ## Where to Find
 Any user file-upload feature (profile image, documents, attachments).     
 
+## How to exploit
 1. Change the `Content-Type` value
 ```
 POST /images/upload/ HTTP/1.1
