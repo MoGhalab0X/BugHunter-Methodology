@@ -1,14 +1,14 @@
-[ ] **Top 25 Account Takeover Bug Bounty Reports**
+➤ **Top 25 Account Takeover Bug Bounty Reports**
 ```
 https://corneacristian.medium.com/top-25-account-takeover-bug-bounty-reports-cd855374be14
 ```
-[ ] **OAuth to Account takeover**
+➤ **OAuth to Account takeover**
 ```
 https://book.hacktricks.xyz/pentesting-web/oauth-to-account-takeover
 ```
 
 
-[ ] **Pre-Account Takeover**                                                  
+➤ **Pre-Account Takeover**                                                  
 
 A pre-account takeover occurs when an attacker creates a user account using one signup method and the victim creates another account using a different signup method using the same email address. Because the email addresses are the same, the application connects the two accounts. when the app is unable to validate email addresses.
 ```
@@ -20,7 +20,7 @@ How to hunt :-
 ```
 
 
-[ ] **Account takeover due to Improper Rate limit**
+➤ **Account takeover due to Improper Rate limit**
 ```
 How to Hunt:-
 
@@ -30,7 +30,7 @@ How to Hunt:-
 ```
 
 
-[ ] **Account takeover by utilizing sensitive data exposure**
+➤ **Account takeover by utilizing sensitive data exposure**
 ```
 Sensitive data exposure occurs when a web application failed to properly protect confidential information, resulting in the disclosure of sensitive information or data about users, or anything related to them, to a third party.
 
@@ -38,7 +38,7 @@ Occasionally, the application displays unnecessary data, such as valid OTPs, has
 ```
 
 
-[ ] **login**                                                                                                                                 
+➤ **login**                                                                                                                                 
 ```
 1. check if you are able to brute force the password
 2. Test for OAuth misconfigurations
@@ -49,7 +49,7 @@ Occasionally, the application displays unnecessary data, such as valid OTPs, has
 ```
 
 
-[ ] **password reset**
+➤ **password reset**
 ```
 1. check if you are able to brute force the password reset OTP
 2. test for token predectability
@@ -63,7 +63,7 @@ Occasionally, the application displays unnecessary data, such as valid OTPs, has
 ```
 
 
-[ ] **XSS to Account Takeover**
+➤ **XSS to Account Takeover**
 
 if the application does not use auth token or you can't access the cookies because the "HttpOnly" flag, you can obtain the CSRF token and craft a request to change the user's email or password       
 ```
@@ -90,14 +90,14 @@ if the application does not use auth token or you can't access the cookies becau
 ```
 
 
-[ ] **CSRF to Account Takeover**
+➤ **CSRF to Account Takeover**
 ```
 1. check if the email update endpoint is vulnerable to CSRF
 2. check if the password change endpoint is vulnerable to CSRF
 ```
 
 
-[ ] **IDOR to Account Takerover**
+➤ **IDOR to Account Takerover**
 ```
 1. checck if the email update endpoint is vulnerable to IDOR
 2. check if the password change endpoint is vulnerable to IDOR
@@ -105,30 +105,30 @@ if the application does not use auth token or you can't access the cookies becau
 ```
 
 
-[ ] **Account takeover by Response & Status code Manipulation**
+➤ **Account takeover by Response & Status code Manipulation**
 
 
-[ ] **Account takeover by exploiting Weak cryptography**
+➤ **Account takeover by exploiting Weak cryptography**
 ```
 check this
 https://infosecwriteups.com/weak-cryptography-in-password-reset-to-full-account-takeover-fc61c75b36b9
 ```
 
 
-[ ] **Password or email change function**
+➤ **Password or email change function**
 ```
 IF you try to change password and see email parameter in password change request, Try changing your email to victim email
 ```
 
 
-[ ] **Sing-Up Function**
+➤ **Sing-Up Function**
 ```
 IF you try to sing-up new account in target site, in email filed try set target email
 
 IF you try to sing-up new account in target site using 3rd party, in 3d party use phone number instead email then link 3rd account with target site.Then Go setting try link victim email in you account
 ```
 
-[ ] **Rest Token**
+➤ **Rest Token**
 ```
 Try to use your REST Token with Target account. Hint: email=Target@email.com&code=$Attacker_TOKEN$
 
@@ -137,32 +137,32 @@ Brute Force Rest Token if it is numeric. Hint : email=Target@email.com&code=$TOK
 Try to figure out how the token are generated: 1. Generated based on TimeStamp OR ID of user OR email of user
 ```
 
-[ ] **Host Header Injection**
+➤ **Host Header Injection**
 ```
 when send rest account request intercept POST Request and Change Host header value from target.site TO Attacker.com: Hint POST /PassRest HTTP1/1 Host: Attacker.com
 ```
 
-[ ] **CORS Misconfiguration to Account Takeover**
+➤ **CORS Misconfiguration to Account Takeover**
 
 If the page contains CORS missconfigurations you might be able to steal sensitive information from the user to takeover his account or make him change auth information for the same purpose:
 ```
 https://book.hacktricks.xyz/pentesting-web/cors-bypass
 ```
-[ ] **Account takeover via leaked session cookie**
+➤ **Account takeover via leaked session cookie**
 ```
 https://hackerone.com/reports/745324
 ```
-[ ] **HTTP Request Smuggling to ATO**
+➤ **HTTP Request Smuggling to ATO**
 ```
 https://hackerone.com/reports/737140
 https://hackerone.com/reports/740037
 ```
 
-[ ] **Bypassing Digits origin validation which leads to account takeover**
+➤ **Bypassing Digits origin validation which leads to account takeover**
 ```
 https://hackerone.com/reports/129873
 ```
-[ ] Top ATO report in hackerone
+➤ Top ATO report in hackerone
 ```
 https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPACCOUNTTAKEOVER.md
 ```
