@@ -2,6 +2,7 @@
 ```
 https://medium.com/@kailasv678/bug-bounty-in-2025-hunting-business-logic-flaws-the-right-way-614aba550f7b
 ```
+------------------------------------------------------------
 1. change the price with other price :100->50
 2. change the price with nagative price :100->-100
 3. change the price with other price by add nagative value: 100 ->(+-120)
