@@ -1,4 +1,4 @@
-[ ] **Hunting Business Logic Flaws the Right Way**
+➤ **Hunting Business Logic Flaws the Right Way**
 ```
 https://medium.com/@kailasv678/bug-bounty-in-2025-hunting-business-logic-flaws-the-right-way-614aba550f7b
 ```
