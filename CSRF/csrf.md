@@ -10,6 +10,7 @@
   - Content-Type: text/plain
   - Content-Type: application/x-www-form-urlencoded
   - JSON instead of form POST
+    
 ➤ Attack techniques
   - JSON CSRF using fetch() without triggering preflight
   - Changing the Content-Type header
