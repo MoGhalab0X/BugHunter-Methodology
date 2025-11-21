@@ -1,6 +1,6 @@
-[ ] **a lot of ideas in this article by omar hashem**
+[ ] **Top 25 Account Takeover Bug Bounty Reports**
 ```
-https://medium.com/bugbountywriteup/hubspot-full-account-takeover-in-bug-bounty-4e2047914ab5
+https://corneacristian.medium.com/top-25-account-takeover-bug-bounty-reports-cd855374be14
 ```
 [ ] **OAuth to Account takeover**
 ```
