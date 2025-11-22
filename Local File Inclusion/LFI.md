@@ -33,10 +33,10 @@
   ```
   https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Linux
   ```
-  - Windows Wordlist:
-  ```
-  https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Windows
-  ```
+- Windows Wordlist:
+```
+https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Windows
+```
           
 ### **Bypasses**
 ```
