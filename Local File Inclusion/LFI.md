@@ -1,11 +1,11 @@
-###**Testing for Local File Inclusion**
+### **Testing for Local File Inclusion**
 - This vulnerability happens when a website allows you to choose a file to display without applying any filtering or security checks. If the input isn’t properly validated, an attacker can insert a path to files on the server and make the website display them. 
          
-###**Common Files to Try**
+### **Common Files to Try**
 - Linux: /etc/passwd
 - Windows: C:\Windows\boot.ini
 
-###**Fuzzing Parameters**
+### **Fuzzing Parameters**
 - Start by fuzzing for potentially injectable parameters using a common wordlist:
   ```
   ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:FUZZ \
@@ -28,7 +28,7 @@
     ?site={payload}
     ```
            
-###**Searching for Sensitive Files**###   
+### **Searching for Sensitive Files** 
 - Linux Wordlist:
   ```
   https://raw.githubusercontent.com/DragonJAR/Security-Wordlist/main/LFI-WordList-Linux
