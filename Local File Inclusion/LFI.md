@@ -12,20 +12,20 @@
   -u 'http://<SERVER_IP>:<PORT>/index.php?FUZZ=value'
   ```
            
-  - This helps you find parameters like:
-    ```
-    ?dir={payload}
-    ?action={payload}
-    ?date={payload}
-    ?detail={payload}
-    ?file={payload}
-    ?download={payload}
-    ?path={payload}
-    ?folder={payload}
-    ?include={payload}
-    ?page={payload}
-    ?locate={payload}
-    ?site={payload}
+- This helps you find parameters like:
+  ```
+  ?dir={payload}
+  ?action={payload}
+  ?date={payload}
+  ?detail={payload}
+  ?file={payload}
+  ?download={payload}
+  ?path={payload}
+  ?folder={payload}
+  ?include={payload}
+  ?page={payload}
+  ?locate={payload}
+  ?site={payload}
     ```
            
 ### **Searching for Sensitive Files** 
