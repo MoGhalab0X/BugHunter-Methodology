@@ -26,7 +26,7 @@ GET /users/delete/victim_id  ->403
 POST /users/delete/victim_id ->200
 ```
 
-➤ Try replacing parameter names
+➤➤➤ Try replacing parameter names
 ```bash
 Instead of this:
 GET /api/albums?album_id=<album id>
