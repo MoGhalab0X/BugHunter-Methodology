@@ -1,4 +1,4 @@
-### **Base Steps**
+### **IDOR Testing Steps:**
 ```
 1. Create two accounts if possible or else enumerate users first. 
 2. Check if the endpoint is private or public and does it contains any kind of id param.
