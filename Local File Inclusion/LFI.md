@@ -12,6 +12,7 @@
            ffuf -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:FUZZ \
            -u 'http://<SERVER_IP>:<PORT>/index.php?FUZZ=value'
            ```
+           
          - This helps you find parameters like:
            ```
            ?dir={payload}
@@ -27,6 +28,7 @@
            ?locate={payload}
            ?site={payload}
            ```
+           
 ###**Searching for Sensitive Files**###   
         - Linux Wordlist:
           ```
