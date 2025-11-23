@@ -99,6 +99,41 @@ attacker。com
 ⒶⓉⓉⒶⒸⓀⒺⓡ.Ⓒⓞⓜ
 ```
 
+- **Domain Confusion**
+```
+# Try also to change attacker.com for 127.0.0.1 to try to access localhost
+# Try replacing https by http
+# Try URL-encoded characters
+https://{domain}@attacker.com
+https://{domain}.attacker.com
+https://{domain}%6D@attacker.com
+https://attacker.com/{domain}
+https://attacker.com/?d={domain}
+https://attacker.com#{domain}
+https://attacker.com@{domain}
+https://attacker.com#@{domain}
+https://attacker.com%23@{domain}
+https://attacker.com%00{domain}
+https://attacker.com%0A{domain}
+https://attacker.com?{domain}
+https://attacker.com///{domain}
+https://attacker.com\{domain}/
+https://attacker.com;https://{domain}
+https://attacker.com\{domain}/
+https://attacker.com\.{domain}
+https://attacker.com/.{domain}
+https://attacker.com\@@{domain}
+https://attacker.com:\@@{domain}
+https://attacker.com#\@{domain}
+https://attacker.com\anything@{domain}/
+https://www.victim.com(\u2044)some(\u2044)path(\u2044)(\u0294)some=param(\uff03)hash@attacker.com
+
+# On each IP position try to put 1 attackers domain and the others the victim domain
+http://1.1.1.1 &@2.2.2.2# @3.3.3.3/
+
+#Parameter pollution
+next={domain}&next=attacker.com
+```
 
 
 
