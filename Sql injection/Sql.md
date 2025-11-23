@@ -5,3 +5,16 @@ This vulnerability can enable attackers to view, modify, or delete data they sho
 Such actions may result in permanent changes to the application’s functionality or content or even compromision of the server or denial of service.
 ```
 
+### **Entry point detection**
+```
+ [Nothing]
+'
+"
+`
+')
+")
+`)
+'))
+"))
+`))
+```
