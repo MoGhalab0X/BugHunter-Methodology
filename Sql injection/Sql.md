@@ -20,7 +20,7 @@ Such actions may result in permanent changes to the application’s functionalit
 ```
 
 ### **Confirming with logical operations**
--To confirm the presence of an SQL Injection vulnerability, we test logical operations within the query and observe any changes in the response.
+- To confirm the presence of an SQL Injection vulnerability, we test logical operations within the query and observe any changes in the response.
 If the website returns the same content when using statements like or 1=1, it indicates the vulnerability, and if the result changes when using and 1=2, it confirms it.
 
 ```
