@@ -15,6 +15,15 @@ you can use dirsearch tool or discovery content path
 search in wayback about this subdomain you can find any important path 
 ```
 
+➤ 403 Method Bypass
+```
+Allow: CONNECT
+Allow: GET
+Allow: HEAD
+Allow: POST
+Allow: TRACE
+```
+
 ➤ bypass by header names
 ```
 Base-Url
