@@ -2,7 +2,6 @@
 ```
 https://github.com/iamj0ker/bypass-403
 https://github.com/channyein1337/403-bypass/blob/main/403-bypass.py
-https://github.com/nico989/B1pass3r
 https://github.com/Dheerajmadhukar/4-ZERO-3
 ```
 ➤ bypass by fuzz or brute force
