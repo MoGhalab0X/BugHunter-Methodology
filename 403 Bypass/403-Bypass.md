@@ -16,7 +16,7 @@ search in wayback about this subdomain you can find any important path
 ```
 
 ➤ 403 Method Bypass
-```
+```bash
 Allow: CONNECT
 Allow: GET
 Allow: HEAD
