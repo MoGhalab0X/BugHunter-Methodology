@@ -2,6 +2,35 @@
 - A Server-side Request Forgery (SSRF) vulnerability occurs when an attacker manipulates a server-side application into making HTTP requests to a domain of their choice. 
 This vulnerability exposes the server to arbitrary external requests directed by the attacker.
 
+### **Top 25 SSRF parameters**
+```
+• ?dest={target} 
+• ?redirect={target} 
+• ?uri={target} 
+• ?path={target} 
+• ?continue={target} 
+• ?url={target} 
+• ?window={target} 
+• ?next={target} 
+• ?data={target} 
+• ?reference={target} 
+• ?site={target}
+• ?html={target} 
+• ?val={target} 
+• ?validate={target} 
+• ?domain={target} 
+• ?callback={target} 
+• ?return={target} 
+• ?page={target} 
+• ?feed={target} 
+• ?host={target} 
+• ?port={target} 
+• ?to={target} 
+• ?out={target} 
+• ?view={target} 
+• ?dir={target} 
+```
+
 ### **URL Format Bypass**
 - **Localhost**
 ```
