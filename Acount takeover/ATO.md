@@ -104,10 +104,6 @@ if the application does not use auth token or you can't access the cookies becau
 3. check if the password reset endpoint vulnerable to IDOR
 ```
 
-
-➤ **Account takeover by Response & Status code Manipulation**
-
-
 ➤ **Account takeover by exploiting Weak cryptography**
 ```
 check this
